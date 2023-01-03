@@ -76,7 +76,6 @@ li.menu-item:hover {
 }
 
 .menu-item a:active,
-.menu-item a:focus,
 .menu-item a:focus-visible {
     outline: none;
     border: none;
