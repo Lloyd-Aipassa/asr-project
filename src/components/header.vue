@@ -137,5 +137,10 @@ button.dropdown2:hover {
     margin-left: 16px;
   }
 
+  button.dropdown:hover,
+  button.dropdown2:hover {
+    padding-top: 0;
+  }
+
 }
 </style>
