@@ -3,7 +3,7 @@
     <img class="logo-asr" alt="ASR logo" src="../assets/LogoASRglobalHeader.svg">
     <div class="header-items">
       <img class="logo-notification" alt="ASR notification" src="../assets/MeldingenNavigatie.svg">
-        <DropdownHeader :items="DD" /> 
+      <DropdownHeader :items="DD" />
     </div>
   </nav>
 </template>
@@ -11,30 +11,30 @@
 <script>
 import DropdownHeader from './dropdownHeader.vue';
 export default {
-    name: "header",
-    components: { DropdownHeader },
-    data() {
-        return {
-            DD: [
-                  {
-                      title: "ListMenu item 1",
-                      link: "https://www.asr.nl/",
-                      image: require('../assets/trashcan.svg')
-                  },
-                  {
-                      title: "ListMenu item 2",
-                      link: "#",
-                      image: require('../assets/persoon.svg')
-                  },
-                  {
-                      title: "ListMenu item 3",
-                      link: "#",
-                      image: require('../assets/Uitgang.svg')
-                  } 
-            ]
+  name: "header",
+  components: { DropdownHeader },
+  data() {
+    return {
+      DD: [
+        {
+          title: "ListMenu item 1",
+          link: "https://www.asr.nl/",
+          image: require('../assets/trashcan.svg')
+        },
+        {
+          title: "ListMenu item 2",
+          link: "#",
+          image: require('../assets/persoon.svg')
+        },
+        {
+          title: "ListMenu item 3",
+          link: "#",
+          image: require('../assets/Uitgang.svg')
         }
-    },
-    
+      ]
+    }
+  },
+
 }
 
 </script>
@@ -67,7 +67,8 @@ img.logo-asr2 {
   align-items: center;
 }
 
-button.dropdown, button.dropdown2 {
+button.dropdown,
+button.dropdown2 {
   position: relative;
   display: flex;
   align-items: center;
@@ -94,43 +95,47 @@ button.dropdown2:hover {
 /* *******13 inche********* */
 @media screen and (max-width: 1440px) {
   nav {
-  height: 88px; 
-  padding: 16px 60px;
+    height: 88px;
+    padding: 16px 60px;
   }
 }
 
 /* *******tablet********* */
 @media screen and (max-width: 834px) {
   nav {
-  height: 88px; 
-  padding: 16px 32px;
+    height: 88px;
+    padding: 16px 32px;
   }
 }
 
 /* *******mobile********* */
 @media screen and (max-width: 600px) {
   nav {
-  height: 72px; 
-  padding: 8px 24px;
+    height: 72px;
+    padding: 8px 24px;
   }
 
   img.logo-asr {
-  width: 90px;
-}
-  img.logo-asr2 {
-  max-width: 26px;
-}
-  img.logo-asr3 {
-  max-width: 8px;
-}
-  img.logo-notification {
-  width: 36px;
-}
+    width: 90px;
+  }
 
-button.dropdown {
-  width: 46px;
-  margin-left: 16px;
-}
+  img.logo-asr2 {
+    max-width: 26px;
+  }
+
+  img.logo-asr3 {
+    max-width: 8px;
+  }
+
+  img.logo-notification {
+    width: 36px;
+  }
+
+  button.dropdown,
+  button.dropdown2 {
+    width: 46px;
+    margin-left: 16px;
+  }
 
 }
 </style>
