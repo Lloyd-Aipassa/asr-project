@@ -1,5 +1,4 @@
 <template>
-    <!-- <button class="dropdown" @click="isOpen = !isOpen"> -->
     <button :class="{ dropdown: isOpen === false, dropdown2: isOpen === true }" @click="isOpen = !isOpen">
         <img class="logo-asr2" alt="ASR logo" src="../assets/LC.svg">
         <img v-if="!isOpen" class="logo-asr3" alt="ASR logo" src="../assets/chevronDown.svg">
@@ -82,9 +81,8 @@ li.menu-item:hover {
     border: 2px dotted #000000;
 }
 
+
 /* *******mobile********* */
-
-
 @media screen and (max-width: 600px) {
     .sub-menu {
         position: absolute;

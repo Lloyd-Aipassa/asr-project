@@ -1,18 +1,11 @@
 <template>
   <header />
-
-  <router-view/>
-
-
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/asr">Asr</router-link> -->
-
+  <router-view />
 </template>
 
 <script>
 // @ is an alias to /src
-import header from '@/components/header.vue'
+import header from '@/components/Header.vue'
 
 export default {
   name: 'HomeView',
@@ -23,14 +16,16 @@ export default {
 </script>
 
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    background-color: #fff8e3;
+
+body {
+  background-color: #fff8e3;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,17 +33,4 @@ body{
   text-align: center;
   color: #2c3e50;
 }
-
-/* nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>

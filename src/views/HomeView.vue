@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <headerView />
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/header.vue'
+import headerView from '@/components/Header.vue'
 
 export default {
-  name: 'asr',
+  name: 'HomeView',
   components: {
-    HelloWorld
+    headerView
   }
 }
 </script>
